@@ -11,7 +11,9 @@ for (let i = 0; i < count; i++) {
     rows.push(padRow(i + 1, count));
 }
 let result = "";
-for (const row of rows) {
-    result = result + "\n" + row;
+// for (const row of rows) {
+for (let i = rows.length - 1; i >= 0; i--) {
+    result = result + rows[i] + "\n";
+
 }
 console.log(result);
